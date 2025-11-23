@@ -1,8 +1,3 @@
-## AI Voice Assistant (Jarvis) 🤖 - GitHub Readme
-
-Here is a full **GitHub Readme** file structured for your AI Voice Assistant project. This version incorporates all the technical details, installation instructions, command examples, and the critical feedback to make the project clear, professional, and helpful for other developers.
-
------
 
 # 🗣️ Jarvis: AI Voice Assistant (CustomTkinter, Gemini, TTS)
 
