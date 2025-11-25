@@ -501,9 +501,16 @@ class JarvisApp:
                 self.get_news_headlines()
                 
             elif query.startswith("open ") or query.startswith("start "):
-                software_name = query.replace("open ", "").replace("start ", "").replace("jarvis ", "").strip()
-                self.open_software(software_name)
-
+                 query=query.replace("open "," ")
+                 query=query.replace(" start " ," ")
+                 query=query.replace("jarvis " ," ")
+                 speak('launching... sir!!')
+                 pyautogui.press("win")
+                 sleep(1)
+                 pyautogui.write(query)
+                 sleep(1)
+                 pyautogui.press("enter")
+                 pass
             # --- Information and Fun Commands ---
             elif "wikipedia" in query:
                 topic = query.split("wikipedia", 1)[-1].strip()
@@ -572,4 +579,5 @@ class JarvisApp:
 if __name__ == "__main__":
     root = ctk.CTk()
     app = JarvisApp(root)
+
     root.mainloop()
